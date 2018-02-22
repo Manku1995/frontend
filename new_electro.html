@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+    font-family:Lato;
+	background-color:#121212;
+	color:black;
+}
+
+#sidenav {
+    height: 100%;
+    width:220px;
+    position: fixed;
+    z-index:2 ;
+    top: 0;
+    left: 0;
+    background-color:black;
+    /*overflow-x: hidden;*/
+    padding-top: 20px;
+}
+
+
+#sidenav a {	
+color: #767676;	
+font-family: Lato;	
+font-size: 19px;	
+font-weight: 500;	
+line-height: 23px;
+display:block;
+text-decoration: none;
+margin-left:13px;
+}
+#sidenav a:hover {
+    color:white;
+}
+#sidenav a.highlite1{
+	color: #FFFFFF;
+	font-family: Lato;	
+	font-size: 19px;	
+	font-weight: 900;
+border-left:8px solid #FFA324;
+margin-left:0px;
+padding-left:5px;
+}
+
+
+.main {
+    margin-left: 200px;
+    padding: 0px 20px;
+	background-color:#121212;
+	color:white;
+	font-family:lato;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}}
+	
+}
+#blue_box{
+    position: relative;
+    background:#121212;
+    width:1150px;
+    height:1000px;
+    padding:10px;
+}
+#left {
+    width:732.5px;
+    height:1000px;
+    float:left;
+    background:#121212;
+	color:white;
+	padding:auto;
+	margin:auto;
+}
+.right {
+    width:340px;
+    height:1000px;
+    float:right;
+    background:#121212;
+	}
+.divider{
+     position:absolute;
+    left:73%;
+    top:30%;
+    bottom:0;
+    border-left:6px solid #474747;
+	border-radius:3px;
+}
+.foo {
+  float: left;
+  width: 180px;
+  height: 50px;
+  margin: 18px;
+  border: 1px solid rgba(0, 0, 0, .2);
+}
+
+.a{
+  background: white;
+  color:black;
+text-align:left;
+}
+.b{
+  background:white;
+  color:black;
+  text-align:left;
+}
+
+.c {
+  background:white;
+  color:black;
+  text-align:left;
+}
+.d{
+background:white;
+color:black;
+  text-align:left;
+}
+.e{
+background:white;
+color:black;
+  text-align:left;
+}
+input[type=search]{
+background-color: #121212;
+color:white;border: solid 5px #121212;
+}
+hr{
+ margin-left: 10px;
+    margin-right: 10px;
+
+}
+.info{
+  float: left;
+  width: 687px;
+  height: 150px;
+  margin: 10px;
+  padding:10px;
+  background-color:#121212;
+  color:white;
+  }
+ .info h3{
+  color:white;
+  text-align:left;} 
+ .info hr{
+ margin-left:5px;
+    margin-right: 10px;
+ color:white;
+ } 
+.info img{
+border-radius:50%;
+}
+.box{float: left;
+  width: 320px;
+  height: 300px;}
+.video{float: left;
+  width: 300px;
+  height: 180px;
+}
+.intro{float: left;
+  width: 300px;
+  height: 80px;
+  color:white;
+  }
+ .mainvideo{
+ width: 680px;
+  height: 391px;
+  background:white;
+  margin:20px;
+ }
+ #header h1 a{color:white;
+ text-decoration:none;
+ color: #FFFFFF;	
+ font-family: Lato;
+ font-size: 36px;	
+ font-weight: 900;
+ } 
+#header h1 a:hover{ color: #818181;}
+#header h1 a:hover{ color: #818181;}
+ .foo h4 a{
+   text-decoration:none;
+  color: #000000;	
+  font-family: Lato;	
+  font-size: 14.25px;	
+  font-weight: 300;	
+  line-height: 17px;
+ }
+   .foo h4 a:hover{color: #818181;}
+ .foo  a.highlite2{
+   text-decoration:none;
+   color: #000000;	
+   font-family: Lato;	
+   font-size: 14.25px;	
+   font-weight: 900;	
+   line-height: 17px;
+   opacity:1;}
+ .right h4 a{
+	color: #D8D8D8;
+	font-family: Lato;
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 17px;
+	text-decoration:none;
+	margin-left:8px;
+	
+}
+ .right a:hover{display:block-inline;
+    width: auto;
+    height: auto;
+	color:gray;
+   }
+ .right a.highlite {
+	color:white;
+	font-size:16px;
+	border-left: 6px solid #FFA324 ;
+	margin-left:0px;
+	padding-left:5px;
+	font-family:lato;
+	font-weight:900;
+}
+ .right h2 a{color:white;
+ text-decoration:none;
+ font-family:lato;
+ font-weight:900;
+ font-size:30px;}
+ .right h3 a{color:white;
+ text-decoration:none;
+ font-family:lato;
+ font-weight:600;
+ font-size:15px;}
+ 
+ .intro b a{color:white;
+ text-decoration:none;}
+ .intro b a:hover{color:#818181;}
+ 
+</style>
+</head>
+<body>
+
+<div id="sidenav"><!--Side bar contaning search box and GENERES-->
+  <a style="color: #FFFFFF;font-family: Lato;font-size: 16px;font-weight: 900;line-height: 19px;" href="#COMEZO">ZEN</a><br>
+  <a style="color: #767676;	font-family: Lato;font-size: 16px;font-weight: 900;	line-height: 19px;" href="#about">Home</a>
+  <br><br><br>
+  <small style="color:white;font-size:12px;">&emsp;&nbsp;GENRES</small><br><br>
+  <a id="default1" class="highlite1" onclick="highlite1(this);" href="#about">See All</a><br>
+  <a onclick="highlite1(this);" href="#about">Introduction</a><br>
+  <a onclick="highlite1(this);" href="#services">Concept</a><br>
+  <a onclick="highlite1(this);" href="#clients">Solving Me</a><br>
+  <a onclick="highlite1(this);" href="#contact">Real World</a><br>
+  <a onclick="highlite1(this);" href="#about">Detailed Explanation</a><br>
+  <a onclick="highlite1(this);" href="#about">Derivations</a><br>
+  
+  <br><br><br><br><br><br><br>
+  <hr>
+  <div class="about" style="background-color:black;height:60px;width:180px;">
+    <a href="#"> <img src="img/big.png" alt="image" width="12px" height="12px" style="border-radius:30%; margin-left:5px;margin-top:8px;float:left"  ><b style="margin-left:
+	15px;color: #FFFFFF;font-family: Lato;font-size: 15px;font-weight: 900;">VAIBHAV</b></a>
+  </div>
+</div><!--End of side bar-->
+
+
+<div class="main"><!--starting of main page-->
+   <div id="header"><!--Starting of header-->
+     <h1><a href="#">&nbsp;&nbsp;&nbsp;Electrostatics</a></h1>
+     <div class="foo a">
+	   <img src="img/20120819_509528_01.jpg" alt="Electric Field" height="50" width="60" align="left">
+	   <h4 style="margin-top:14px;"><a id="default2" class="highlite2" onclick="highlite2(this);" style="margin-left:10px;"  href="#">Electric Field</a></h4>
+	 </div>
+     <div class="foo b">
+	   <img src="img/chemistry_by_gintele-d9bjs40.jpg" alt="Electric Potential" height="50" width="60" align="left">
+	   <h4 style="margin-top:14px;"><a onclick="highlite2(this);" style="margin-left:8px;" href="#">Electric Potential</a></h4>
+	 </div>
+     <div class="foo c">
+	    <img src="img/making-the-modern-world-gallery-credit-science-museum-london.jpg" alt="gauss Law" height="50" width="60" align="left">
+	    <h4 style="margin-top:14px;"><a onclick="highlite2(this);" style="margin-left:12px;" href="#">Gauss Law</a></h4>
+	 </div>
+     <div class="foo d">
+	    <img src="img/ScreenShot.png" alt="Capacitance" height="50" width="60" align="left">
+		<h4 style="margin-top:14px;"><a onclick="highlite2(this);" style="margin-left:8px;" href="#">Capacitance</a></h4>
+	</div>
+	<div class="foo e">
+	    <img src="img/mech.png" alt="Electric Current" height="50" width="60" align="left">
+		<h4 style="margin-top:14px;"><a onclick="highlite2(this);" style="margin-left:8px;" href="#">Electric Current</a></h4>
+	</div>
+   </div>
+  <div id="blue_box"><!-- part of the page named blue_box below main part divided by the divider(white line)-->
+
+    <div id="left"><!-- left side of blue_box part of page containing videos-->
+			
+		 
+	 <div class="mainvideo" width="660" height="391">
+	 </div>
+	 
+    <div class="info">
+		<img src="img/20120819_509528_01.jpg" alt="Capacitance" height="64" width="60" align="left">
+		<h3>&emsp;Electric Field : Crash Course Physics #25<br>&emsp;From Crash Course</h3>
+		<div class="image" style="width:50px;height:50px;margin-left:688px;margin-top:-513px;">
+		<a href="#" style="text-decoration:none;"><img src="img/Add.png" alt="add" width="40px" height="40px" style="border-radius:10%;"></a>
+	   </div> <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	   <hr>
+		<h5 style="font-family: Lato;font-size:16px;">Moving on to our uniton the Physics of Electricity, it's time to talk charge?Is there a positive and negative charge?What do these things mean? In this episode,Shini talks about electrostatics
+		forces,electric charge,Coloumb Law and the force between charged objects. 
+	</h5>
+	<img src="img/down.png" alt="down_icon" style="margin-left:330px;">
+	</div>`	
+  
+</div><!-- End of left side of blue_box part-->
+     <div class="divider"></div> 	 <!--Divider white line-->
+      <div class="right" ><!--Starting of right side of blue_box part of page contaninig INDEX -->
+	    <div class="index" style="height:auto;margin-left:20px;">
+         <h2><a href="#">&nbsp;INDEX</h2>
+	     <h3 ><a href="#">&nbsp;&nbsp;&nbsp;ELECTRIC FIELD</a></h3>
+	     <h4 ><a id="default" class="highlite" onclick="highlite(this);" href="#">The Electric Field lines</a></h4>
+	     <h4><a onclick="highlite(this);" href="#">The Electric Field due to point charge</a></h4>
+	     <h4><a onclick="highlite(this);" href="#">The Electric Field due to electric dipole</a></h4>
+	     <h4><a onclick="highlite(this);" href="#">The Electric Field due to Line of charge</a></h4>
+	     <h4><a onclick="highlite(this);" href="#">The Electric Field due to Charged Disk</a></h4>
+	     <h4><a onclick="highlite(this);" href="#">A point Charge in an Electric field</a></h4>
+	     <h4><a onclick="highlite(this);" href="#">A Dipole in an Electric Field</a></h4>
+	   </div>
+	</div><!--End of right part of blue_box part of page-->
+ </div><!--end of blue_box part of page-->
+</div> <!--End of main page-->
+<script>
+  var current = document.getElementById('default');
+
+  function highlite(el)
+  {
+     if (current != null)
+     {
+         current.className = "";
+		  
+     }
+	 
+     el.className = "highlite";
+     current = el;
+	 
+	
+  }
+  var current1 = document.getElementById('default1');
+
+  function highlite1(el)
+  {
+     if (current1 != null)
+     {
+         current1.className = "";
+     }
+     el.className = "highlite1";
+     current1 = el;
+  }
+ var current2 = document.getElementById('default2');
+
+  function highlite2(el)
+  {
+     if (current1 != null)
+     {
+         current2.className = "";
+     }
+     el.className = "highlite2";
+     current2 = el;
+  }
+
+
+ </script>
+</body>
+</html> 

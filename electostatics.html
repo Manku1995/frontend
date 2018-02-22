@@ -1,0 +1,722 @@
+<!doctype html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap tutorial for begineers</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style type="text/css">
+   
+        #Navbar {
+            top: 120px;
+        }
+		.active{color:blue;
+	font-size:20px;
+	border-left: 6px solid #FFA324 ;
+	margin-left:0px;
+	padding-left:0px;
+	font-family:lato;
+	font-weight:900;}
+		.r{float:right;
+		margin-top:500px;
+		}body {
+    font-family:Lato;
+	background-color:#121212;
+	color:black;
+}
+#header{
+margin-top:-10px;
+background-color:#121212;
+index-z:2;
+position:fixed;
+
+}
+
+#sidenav {
+    height: 100%;
+    width:220px;
+    position: fixed;
+    z-index:2 ;
+    top: 0;
+    left: 0;
+    background-color:black;
+    /*overflow-x: hidden;*/
+    padding-top: 20px;
+}
+
+
+#sidenav a {	
+color: #767676;	
+font-family: Lato;	
+font-size: 19px;	
+font-weight: 500;	
+line-height: 23px;
+display:block;
+text-decoration: none;
+margin-left:13px;
+}
+#sidenav a:hover {
+    color:white;
+}
+#sidenav a.highlite1{
+	color: #FFFFFF;
+	font-family: Lato;	
+	font-size: 19px;	
+	font-weight: 900;
+border-left:8px solid #FFA324;
+margin-left:0px;
+padding-left:5px;
+}
+
+
+.main {
+    margin-left: 200px;
+    padding: 0px 20px;
+	background-color:#121212;
+	color:white;
+	font-family:lato;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}}
+	
+}
+#blue_box{
+    position: relative;
+    background:#121212;
+    width:1150px;
+    height:1000px;
+    padding:10px;
+}
+.left {
+     width:732.5px;
+    height:1000px;
+    float:left;
+    background:#121212;
+	color:white;
+	padding:auto;
+	margin-top:140px;
+}
+.right {
+    width:340px;
+    height:1000px;
+    float:right;
+    background:#121212;
+	position:fixed;
+	margin-left:57%;
+	margin-top:157px;
+	}
+.divider{
+     position:absolute;
+    left:73%;
+    top:30%;
+    bottom:0;
+    border-left:6px solid #474747;
+	border-radius:3px;
+	position:fixed;
+}
+.foo {
+  float: left;
+  width: 180px;
+  height: 50px;
+  margin: 18px;
+  border: 1px solid rgba(0, 0, 0, .2);
+}
+
+.a{
+  background: white;
+  color:black;
+}
+.b{
+  background:white;
+  color:black;
+}
+
+.c {
+  background:white;
+  color:black;
+}
+.d{
+background:white;
+color:black;
+}
+.e{
+background:white;
+color:black;
+}
+input[type=search]{
+background-color: #121212;
+color:white;border: solid 5px #121212;
+}
+hr{
+ margin-left: 10px;
+    margin-right: 10px;
+
+}
+.info{
+  float: left;
+  width: 687px;
+  height: 150px;
+  margin: 10px;
+  padding:10px;
+  background-color:#121212;
+  color:white;
+  }
+ .info h3{
+  color:white;
+  text-align:left;} 
+ .info hr{
+ margin-left:5px;
+ margin-right: 10px;
+ color:white;
+ } 
+.info img{
+border-radius:50%;
+}
+.box{float: left;
+  width: 320px;
+  height: 300px;}
+.video{float: left;
+  width: 300px;
+  height: 180px;
+}
+.intro{float: left;
+  width: 300px;
+  height: 80px;
+  color:white;
+  }
+ .mainvideo{
+ width: 680px;
+  height: 391px;
+  background:white;
+  margin:20px;
+ }
+ #header h1 a{color:white;
+ text-decoration:none;
+ color: #FFFFFF;	
+ font-family: Lato;	
+ font-size: 36px;	
+ font-weight: 900;
+ } 
+#header h1 a:hover{ color: #818181;}
+#header h1 a:hover{ color: #818181;}
+  .foo h4 a{
+   text-decoration:none;
+  color: #000000;	
+  font-family: Lato;	
+  font-size: 14.25px;	
+  font-weight: 300;	
+  line-height: 17px;
+  margin-top:10px;}
+   .foo h4 a:hover{color: #818181;}
+ .foo  a.highlite2{
+   text-decoration:none;
+   color: #000000;	
+   font-family: Lato;	
+   font-size: 14.25px;	
+   font-weight: 900;	
+   line-height: 17px;}
+ .right ul li a{
+	color: #D8D8D8;
+	font-family: Lato;
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 17px;
+	text-decoration:none;
+	margin-left:8px;
+	
+}
+ .right a:hover{
+	color:gray;
+   }
+ 
+ 
+ .intro b a{color:white;
+ text-decoration:none;}
+ .intro b a:hover{color:#818181;}
+    </style>
+</head>
+<body>
+<div id="sidenav"><!--Side bar contaning search box and GENERES-->
+  <a style="color: #FFFFFF;font-family: Lato;font-size: 16px;font-weight: 900;line-height: 19px;" href="#COMEZO">ZEN</a><br>
+  <a style="color: #767676;	font-family: Lato;font-size: 16px;font-weight: 900;	line-height: 19px;" href="#about">Home</a>
+  <br><br><br>
+  <small style="color:white;font-size:12px;">&emsp;&nbsp;GENRES</small><br><br>
+  <a id="default1" class="highlite1" onclick="highlite1(this);" href="#about">See All</a><br>
+  <a onclick="highlite1(this);" href="#about">Introduction</a><br>
+  <a onclick="highlite1(this);" href="#services">Concept</a><br>
+  <a onclick="highlite1(this);" href="#clients">Solving Me</a><br>
+  <a onclick="highlite1(this);" href="#contact">Real World</a><br>
+  <a onclick="highlite1(this);" href="#about">Detailed Explanation</a><br>
+  <a onclick="highlite1(this);" href="#about">Derivations</a><br>
+  
+  <br><br><br><br><br><br><br>
+  <hr>
+  <div class="about" style="background-color:black;height:60px;width:180px;">
+    <a href="#"> <img src="img/big.png" alt="image" width="12px" height="12px" style="border-radius:30%; margin-left:5px;margin-top:8px;float:left"  ><b style="margin-left:
+	15px;color: #FFFFFF;font-family: Lato;font-size: 15px;font-weight: 900;">VAIBHAV</b></a>
+  </div>
+</div><!--End of side bar-->
+
+
+<div class="main"><!--starting of main page-->
+   <div id="header"><!--Starting of header-->
+     <h1><a href="#">&nbsp;&nbsp;&nbsp;Electrostatics</a></h1>
+     <div class="foo a">
+	   <img src="img/20120819_509528_01.jpg" alt="Electric Field" height="50" width="60" align="left">
+	   <h4 style="margin-top:14px;"><a id="default2" class="highlite2" onclick="highlite2(this);" style="margin-left:10px;"  href="#">Electric Field</a></h4>
+	 </div>
+     <div class="foo b">
+	   <img src="img/chemistry_by_gintele-d9bjs40.jpg" alt="Electric Potential" height="50" width="60" align="left">
+	   <h4 style="margin-top:14px;"><a onclick="highlite2(this);" style="margin-left:8px;" href="#">Electric Potential</a></h4>
+	 </div>
+     <div class="foo c">
+	    <img src="img/making-the-modern-world-gallery-credit-science-museum-london.jpg" alt="gauss Law" height="50" width="60" align="left">
+	    <h4 style="margin-top:14px;"><a onclick="highlite2(this);" style="margin-left:12px;" href="#">Gauss Law</a></h4>
+	 </div>
+     <div class="foo d">
+	    <img src="img/ScreenShot.png" alt="Capacitance" height="50" width="60" align="left">
+		<h4 style="margin-top:14px;"><a onclick="highlite2(this);" style="margin-left:8px;" href="#">Capacitance</a></h4>
+	</div>
+	<div class="foo e">
+	    <img src="img/mech.png" alt="Electric Current" height="50" width="60" align="left">
+		<h4 style="margin-top:14px;"><a onclick="highlite2(this);" style="margin-left:8px;" href="#">Electric Current</a></h4>
+	</div>
+   </div>
+       <section id="blue_box" >
+	   <br><br>
+         <div class="right">
+		 <div class="index" style="height:auto;margin-left:15px;">
+                <nav id="Navbar">
+                    <ul class="nav ">
+					    <li ><a style="color:white;text-decoration:none;font-family:lato;font-weight:900;font-size:30px;" href="#">&nbsp;INDEX</a></li>
+	                    <li ><a style="color:white;text-decoration:none;font-family:lato;font-weight:600;font-size:15px;" href="#">&nbsp;&nbsp;&nbsp;ELECTRIC FIELD</a></li>
+                        <li><a href="#sec1">The Electric Field lines</a></li>
+                        <li><a  href="#sec2">The Electric Field due to point charge</a></li>
+                        <li><a href="#sec3">The Electric Field due to electric dipole</a></li>
+                        <li><a href="#sec4">The Electric Field due to Line of charge</a></li>
+                        <li><a href="#sec5">The Electric Field due to Charged Disk</a></li>
+						<li><a href="#sec6">A point Charge in an Electric field</a></li>
+						<li><a href="#sec7">A Dipole in an Electric Field</a></li>
+                    </ul>
+
+                </nav>
+				</div>
+			</div>	
+			<div class="divider"></div>
+			<div class="left">
+ 
+                <div id="sec1">
+				<h5 style="color:#121212;">Section1</h5>
+                    <div class="box" style="padding:1px;margin:20px;border:1px solid #121212; background-color:#121212;">
+	  <a href="#" onclick="myFunction()" style="text-decoration:none;color:white;font-size:18px"><b></b></a>
+		<div class="video" style="padding:1px;margin:5px;border:1px solid #121212; background-color:white;" >
+		</div>
+		
+		<span class="intro" style="padding:1px;margin:7px; background-color:#121212;">
+		   <a href="#"> <img src="img/Add.png" alt="add" width="20px" height="20px" style="border-radius:10%;float:right;"></a>
+			<small>INTRODUCTION</small><br>
+			<small>Electric Field Lines</small><br>
+			<b><a href="#">Electric Charge : Crash Course <br>Physics #25</a></b>
+		</span>
+		</div>
+	 <div class="box" style="padding:1px;margin:20px;border:1px solid #121212; background-color:#121212;">
+	  <a href="#" onclick="myFunction()" style="text-decoration:none;color:white;font-size:18px"><b></b></a>
+		<div class="video" style="padding:1px;margin:5px;border:1px solid #121212; background-color:white;" >
+		</div>
+		
+		<span class="intro" style="padding:1px;margin:7px; background-color:#121212;">
+		   <a href="#"> <img src="img/Add.png" alt="add" width="20px" height="20px" style="border-radius:10%;float:right;"></a>
+			<small>INTRODUCTION</small><br>
+			<small>Electric Field Lines</small><br>
+			<b><a href="#">Electric Charge : Crash Course <br>Physics #25</a></b>
+		</span>
+		
+	 </div>
+	 <div class="box" style="padding:1px;margin:20px;border:1px solid #121212; background-color:#121212;">
+	  <a href="#" onclick="myFunction()" style="text-decoration:none;color:white;font-size:18px"><b></b></a>
+		<div class="video" style="padding:1px;margin:5px;border:1px solid #121212; background-color:white;" >
+		</div>
+		
+		<span class="intro" style="padding:1px;margin:7px; background-color:#121212;">
+		   <a href="#"> <img src="img/Add.png" alt="add" width="20px" height="20px" style="border-radius:10%;float:right;"></a>
+			<small>INTRODUCTION</small><br>
+			<small>Electric Field Lines</small><br>
+			<b><a href="#">Electric Charge : Crash Course <br>Physics #25</a></b>
+		</span>
+		</div>
+	 <div class="box" style="padding:1px;margin:20px;border:1px solid #121212; background-color:#121212;">
+	  <a href="#" onclick="myFunction()" style="text-decoration:none;color:white;font-size:18px"><b></b></a>
+		<div class="video" style="padding:1px;margin:5px;border:1px solid #121212; background-color:white;" >
+		</div>
+		
+		<span class="intro" style="padding:1px;margin:7px; background-color:#121212;">
+		   <a href="#"> <img src="img/Add.png" alt="add" width="20px" height="20px" style="border-radius:10%;float:right;"></a>
+			<small>INTRODUCTION</small><br>
+			<small>Electric Field Lines</small><br>
+			<b><a href="#">Electric Charge : Crash Course <br>Physics #25</a></b>
+		</span>
+		
+	 </div>
+</div>
+
+                <div id="sec2">
+				<h5 style="color:#121212;" >section2</h5>
+					<div class="box" style="padding:1px;margin:20px;border:1px solid #121212; background-color:#121212;">
+	  <a href="#" onclick="myFunction()" style="text-decoration:none;color:white;font-size:18px"><b></b></a>
+		<div class="video" style="padding:1px;margin:5px;border:1px solid #121212; background-color:white;" >
+		</div>
+		
+		<span class="intro" style="padding:1px;margin:7px; background-color:#121212;">
+		   <a href="#"> <img src="img/Add.png" alt="add" width="20px" height="20px" style="border-radius:10%;float:right;"></a>
+			<small>INTRODUCTION</small><br>
+			<small>Electric Field Lines</small><br>
+			<b><a href="#">Electric Charge : Crash Course <br>Physics #25</a></b>
+		</span>
+		</div>
+	 <div class="box" style="padding:1px;margin:20px;border:1px solid #121212; background-color:#121212;">
+	  <a href="#" onclick="myFunction()" style="text-decoration:none;color:white;font-size:18px"><b></b></a>
+		<div class="video" style="padding:1px;margin:5px;border:1px solid #121212; background-color:white;" >
+		</div>
+		
+		<span class="intro" style="padding:1px;margin:7px; background-color:#121212;">
+		   <a href="#"> <img src="img/Add.png" alt="add" width="20px" height="20px" style="border-radius:10%;float:right;"></a>
+			<small>INTRODUCTION</small><br>
+			<small>Electric Field Lines</small><br>
+			<b><a href="#">Electric Charge : Crash Course <br>Physics #25</a></b>
+		</span>
+		
+	 </div>
+	 <div class="box" style="padding:1px;margin:20px;border:1px solid #121212; background-color:#121212;">
+	  <a href="#" onclick="myFunction()" style="text-decoration:none;color:white;font-size:18px"><b></b></a>
+		<div class="video" style="padding:1px;margin:5px;border:1px solid #121212; background-color:white;" >
+		</div>
+		
+		<span class="intro" style="padding:1px;margin:7px; background-color:#121212;">
+		   <a href="#"> <img src="img/Add.png" alt="add" width="20px" height="20px" style="border-radius:10%;float:right;"></a>
+			<small>INTRODUCTION</small><br>
+			<small>Electric Field Lines</small><br>
+			<b><a href="#">Electric Charge : Crash Course <br>Physics #25</a></b>
+		</span>
+		</div>
+	 <div class="box" style="padding:1px;margin:20px;border:1px solid #121212; background-color:#121212;">
+	  <a href="#" onclick="myFunction()" style="text-decoration:none;color:white;font-size:18px"><b></b></a>
+		<div class="video" style="padding:1px;margin:5px;border:1px solid #121212; background-color:white;" >
+		</div>
+		
+		<span class="intro" style="padding:1px;margin:7px; background-color:#121212;">
+		   <a href="#"> <img src="img/Add.png" alt="add" width="20px" height="20px" style="border-radius:10%;float:right;"></a>
+			<small>INTRODUCTION</small><br>
+			<small>Electric Field Lines</small><br>
+			<b><a href="#">Electric Charge : Crash Course <br>Physics #25</a></b>
+		</span>
+		
+	 </div>
+   </div>
+
+                <div id="sec3">
+				<h5 style="color:#121212;">Section3</h5>
+					<div class="box" style="padding:1px;margin:20px;border:1px solid #121212; background-color:#121212;">
+	  <a href="#" onclick="myFunction()" style="text-decoration:none;color:white;font-size:18px"><b></b></a>
+		<div class="video" style="padding:1px;margin:5px;border:1px solid #121212; background-color:white;" >
+		</div>
+		
+		<span class="intro" style="padding:1px;margin:7px; background-color:#121212;">
+		   <a href="#"> <img src="img/Add.png" alt="add" width="20px" height="20px" style="border-radius:10%;float:right;"></a>
+			<small>INTRODUCTION</small><br>
+			<small>Electric Field Lines</small><br>
+			<b><a href="#">Electric Charge : Crash Course <br>Physics #25</a></b>
+		</span>
+		</div>
+	 <div class="box" style="padding:1px;margin:20px;border:1px solid #121212; background-color:#121212;">
+	  <a href="#" onclick="myFunction()" style="text-decoration:none;color:white;font-size:18px"><b></b></a>
+		<div class="video" style="padding:1px;margin:5px;border:1px solid #121212; background-color:white;" >
+		</div>
+		
+		<span class="intro" style="padding:1px;margin:7px; background-color:#121212;">
+		   <a href="#"> <img src="img/Add.png" alt="add" width="20px" height="20px" style="border-radius:10%;float:right;"></a>
+			<small>INTRODUCTION</small><br>
+			<small>Electric Field Lines</small><br>
+			<b><a href="#">Electric Charge : Crash Course <br>Physics #25</a></b>
+		</span>
+		
+	 </div>
+	 <div class="box" style="padding:1px;margin:20px;border:1px solid #121212; background-color:#121212;">
+	  <a href="#" onclick="myFunction()" style="text-decoration:none;color:white;font-size:18px"><b></b></a>
+		<div class="video" style="padding:1px;margin:5px;border:1px solid #121212; background-color:white;" >
+		</div>
+		
+		<span class="intro" style="padding:1px;margin:7px; background-color:#121212;">
+		   <a href="#"> <img src="img/Add.png" alt="add" width="20px" height="20px" style="border-radius:10%;float:right;"></a>
+			<small>INTRODUCTION</small><br>
+			<small>Electric Field Lines</small><br>
+			<b><a href="#">Electric Charge : Crash Course <br>Physics #25</a></b>
+		</span>
+		</div>
+	 <div class="box" style="padding:1px;margin:20px;border:1px solid #121212; background-color:#121212;">
+	  <a href="#" onclick="myFunction()" style="text-decoration:none;color:white;font-size:18px"><b></b></a>
+		<div class="video" style="padding:1px;margin:5px;border:1px solid #121212; background-color:white;" >
+		</div>
+		
+		<span class="intro" style="padding:1px;margin:7px; background-color:#121212;">
+		   <a href="#"> <img src="img/Add.png" alt="add" width="20px" height="20px" style="border-radius:10%;float:right;"></a>
+			<small>INTRODUCTION</small><br>
+			<small>Electric Field Lines</small><br>
+			<b><a href="#">Electric Charge : Crash Course <br>Physics #25</a></b>
+		</span>
+		
+	 </div>
+	 </div>
+
+                <div id="sec4">				
+				<h5 style="color:#121212;">Section 4</h5>
+					<div class="box" style="padding:1px;margin:20px;border:1px solid #121212; background-color:#121212;">
+	  <a href="#" onclick="myFunction()" style="text-decoration:none;color:white;font-size:18px"><b></b></a>
+		<div class="video" style="padding:1px;margin:5px;border:1px solid #121212; background-color:white;" >
+		</div>
+		
+		<span class="intro" style="padding:1px;margin:7px; background-color:#121212;">
+		   <a href="#"> <img src="img/Add.png" alt="add" width="20px" height="20px" style="border-radius:10%;float:right;"></a>
+			<small>INTRODUCTION</small><br>
+			<small>Electric Field Lines</small><br>
+			<b><a href="#">Electric Charge : Crash Course <br>Physics #25</a></b>
+		</span>
+		</div>
+	 <div class="box" style="padding:1px;margin:20px;border:1px solid #121212; background-color:#121212;">
+	  <a href="#" onclick="myFunction()" style="text-decoration:none;color:white;font-size:18px"><b></b></a>
+		<div class="video" style="padding:1px;margin:5px;border:1px solid #121212; background-color:white;" >
+		</div>
+		
+		<span class="intro" style="padding:1px;margin:7px; background-color:#121212;">
+		   <a href="#"> <img src="img/Add.png" alt="add" width="20px" height="20px" style="border-radius:10%;float:right;"></a>
+			<small>INTRODUCTION</small><br>
+			<small>Electric Field Lines</small><br>
+			<b><a href="#">Electric Charge : Crash Course <br>Physics #25</a></b>
+		</span>
+		
+	 </div>
+	 <div class="box" style="padding:1px;margin:20px;border:1px solid #121212; background-color:#121212;">
+	  <a href="#" onclick="myFunction()" style="text-decoration:none;color:white;font-size:18px"><b></b></a>
+		<div class="video" style="padding:1px;margin:5px;border:1px solid #121212; background-color:white;" >
+		</div>
+		
+		<span class="intro" style="padding:1px;margin:7px; background-color:#121212;">
+		   <a href="#"> <img src="img/Add.png" alt="add" width="20px" height="20px" style="border-radius:10%;float:right;"></a>
+			<small>INTRODUCTION</small><br>
+			<small>Electric Field Lines</small><br>
+			<b><a href="#">Electric Charge : Crash Course <br>Physics #25</a></b>
+		</span>
+		</div>
+	 <div class="box" style="padding:1px;margin:20px;border:1px solid #121212; background-color:#121212;">
+	  <a href="#" onclick="myFunction()" style="text-decoration:none;color:white;font-size:18px"><b></b></a>
+		<div class="video" style="padding:1px;margin:5px;border:1px solid #121212; background-color:white;" >
+		</div>
+		
+		<span class="intro" style="padding:1px;margin:7px; background-color:#121212;">
+		   <a href="#"> <img src="img/Add.png" alt="add" width="20px" height="20px" style="border-radius:10%;float:right;"></a>
+			<small>INTRODUCTION</small><br>
+			<small>Electric Field Lines</small><br>
+			<b><a href="#">Electric Charge : Crash Course <br>Physics #25</a></b>
+		</span>
+		
+	 </div>
+   </div>
+
+                <div id="sec5">
+				<h5 style="color:#121212;">Section 5</h5>
+					<div class="box" style="padding:1px;margin:20px;border:1px solid #121212; background-color:#121212;">
+	  <a href="#" onclick="myFunction()" style="text-decoration:none;color:white;font-size:18px"><b></b></a>
+		<div class="video" style="padding:1px;margin:5px;border:1px solid #121212; background-color:white;" >
+		</div>
+		
+		<span class="intro" style="padding:1px;margin:7px; background-color:#121212;">
+		   <a href="#"> <img src="img/Add.png" alt="add" width="20px" height="20px" style="border-radius:10%;float:right;"></a>
+			<small>INTRODUCTION</small><br>
+			<small>Electric Field Lines</small><br>
+			<b><a href="#">Electric Charge : Crash Course <br>Physics #25</a></b>
+		</span>
+		</div>
+	 <div class="box" style="padding:1px;margin:20px;border:1px solid #121212; background-color:#121212;">
+	  <a href="#" onclick="myFunction()" style="text-decoration:none;color:white;font-size:18px"><b></b></a>
+		<div class="video" style="padding:1px;margin:5px;border:1px solid #121212; background-color:white;" >
+		</div>
+		
+		<span class="intro" style="padding:1px;margin:7px; background-color:#121212;">
+		   <a href="#"> <img src="img/Add.png" alt="add" width="20px" height="20px" style="border-radius:10%;float:right;"></a>
+			<small>INTRODUCTION</small><br>
+			<small>Electric Field Lines</small><br>
+			<b><a href="#">Electric Charge : Crash Course <br>Physics #25</a></b>
+		</span>
+		
+	 </div>
+	 <div class="box" style="padding:1px;margin:20px;border:1px solid #121212; background-color:#121212;">
+	  <a href="#" onclick="myFunction()" style="text-decoration:none;color:white;font-size:18px"><b></b></a>
+		<div class="video" style="padding:1px;margin:5px;border:1px solid #121212; background-color:white;" >
+		</div>
+		
+		<span class="intro" style="padding:1px;margin:7px; background-color:#121212;">
+		   <a href="#"> <img src="img/Add.png" alt="add" width="20px" height="20px" style="border-radius:10%;float:right;"></a>
+			<small>INTRODUCTION</small><br>
+			<small>Electric Field Lines</small><br>
+			<b><a href="#">Electric Charge : Crash Course <br>Physics #25</a></b>
+		</span>
+		</div>
+	 <div class="box" style="padding:1px;margin:20px;border:1px solid #121212; background-color:#121212;">
+	  <a href="#" onclick="myFunction()" style="text-decoration:none;color:white;font-size:18px"><b></b></a>
+		<div class="video" style="padding:1px;margin:5px;border:1px solid #121212; background-color:white;" >
+		</div>
+		
+		<span class="intro" style="padding:1px;margin:7px; background-color:#121212;">
+		   <a href="#"> <img src="img/Add.png" alt="add" width="20px" height="20px" style="border-radius:10%;float:right;"></a>
+			<small>INTRODUCTION</small><br>
+			<small>Electric Field Lines</small><br>
+			<b><a href="#">Electric Charge : Crash Course <br>Physics #25</a></b>
+		</span>
+		
+	 </div>
+ </div>
+ <div id="sec6">
+				<h5 style="color:#121212;">Section 6</h5>
+					<div class="box" style="padding:1px;margin:20px;border:1px solid #121212; background-color:#121212;">
+	  <a href="#" onclick="myFunction()" style="text-decoration:none;color:white;font-size:18px"><b></b></a>
+		<div class="video" style="padding:1px;margin:5px;border:1px solid #121212; background-color:white;" >
+		</div>
+		
+		<span class="intro" style="padding:1px;margin:7px; background-color:#121212;">
+		   <a href="#"> <img src="img/Add.png" alt="add" width="20px" height="20px" style="border-radius:10%;float:right;"></a>
+			<small>INTRODUCTION</small><br>
+			<small>Electric Field Lines</small><br>
+			<b><a href="#">Electric Charge : Crash Course <br>Physics #25</a></b>
+		</span>
+		</div>
+	 <div class="box" style="padding:1px;margin:20px;border:1px solid #121212; background-color:#121212;">
+	  <a href="#" onclick="myFunction()" style="text-decoration:none;color:white;font-size:18px"><b></b></a>
+		<div class="video" style="padding:1px;margin:5px;border:1px solid #121212; background-color:white;" >
+		</div>
+		
+		<span class="intro" style="padding:1px;margin:7px; background-color:#121212;">
+		   <a href="#"> <img src="img/Add.png" alt="add" width="20px" height="20px" style="border-radius:10%;float:right;"></a>
+			<small>INTRODUCTION</small><br>
+			<small>Electric Field Lines</small><br>
+			<b><a href="#">Electric Charge : Crash Course <br>Physics #25</a></b>
+		</span>
+		
+	 </div>
+	 <div class="box" style="padding:1px;margin:20px;border:1px solid #121212; background-color:#121212;">
+	  <a href="#" onclick="myFunction()" style="text-decoration:none;color:white;font-size:18px"><b></b></a>
+		<div class="video" style="padding:1px;margin:5px;border:1px solid #121212; background-color:white;" >
+		</div>
+		
+		<span class="intro" style="padding:1px;margin:7px; background-color:#121212;">
+		   <a href="#"> <img src="img/Add.png" alt="add" width="20px" height="20px" style="border-radius:10%;float:right;"></a>
+			<small>INTRODUCTION</small><br>
+			<small>Electric Field Lines</small><br>
+			<b><a href="#">Electric Charge : Crash Course <br>Physics #25</a></b>
+		</span>
+		</div>
+	 <div class="box" style="padding:1px;margin:20px;border:1px solid #121212; background-color:#121212;">
+	  <a href="#" onclick="myFunction()" style="text-decoration:none;color:white;font-size:18px"><b></b></a>
+		<div class="video" style="padding:1px;margin:5px;border:1px solid #121212; background-color:white;" >
+		</div>
+		
+		<span class="intro" style="padding:1px;margin:7px; background-color:#121212;">
+		   <a href="#"> <img src="img/Add.png" alt="add" width="20px" height="20px" style="border-radius:10%;float:right;"></a>
+			<small>INTRODUCTION</small><br>
+			<small>Electric Field Lines</small><br>
+			<b><a href="#">Electric Charge : Crash Course <br>Physics #25</a></b>
+		</span>
+		
+	 </div>
+ </div>
+ <div id="sec7">
+				<h5 style="color:#121212;">Section 7</h5>
+					<div class="box" style="padding:1px;margin:20px;border:1px solid #121212; background-color:#121212;">
+	  <a href="#" onclick="myFunction()" style="text-decoration:none;color:white;font-size:18px"><b></b></a>
+		<div class="video" style="padding:1px;margin:5px;border:1px solid #121212; background-color:white;" >
+		</div>
+		
+		<span class="intro" style="padding:1px;margin:7px; background-color:#121212;">
+		   <a href="#"> <img src="img/Add.png" alt="add" width="20px" height="20px" style="border-radius:10%;float:right;"></a>
+			<small>INTRODUCTION</small><br>
+			<small>Electric Field Lines</small><br>
+			<b><a href="#">Electric Charge : Crash Course <br>Physics #25</a></b>
+		</span>
+		</div>
+	 <div class="box" style="padding:1px;margin:20px;border:1px solid #121212; background-color:#121212;">
+	  <a href="#" onclick="myFunction()" style="text-decoration:none;color:white;font-size:18px"><b></b></a>
+		<div class="video" style="padding:1px;margin:5px;border:1px solid #121212; background-color:white;" >
+		</div>
+		
+		<span class="intro" style="padding:1px;margin:7px; background-color:#121212;">
+		   <a href="#"> <img src="img/Add.png" alt="add" width="20px" height="20px" style="border-radius:10%;float:right;"></a>
+			<small>INTRODUCTION</small><br>
+			<small>Electric Field Lines</small><br>
+			<b><a href="#">Electric Charge : Crash Course <br>Physics #25</a></b>
+		</span>
+		
+	 </div>
+	 <div class="box" style="padding:1px;margin:20px;border:1px solid #121212; background-color:#121212;">
+	  <a href="#" onclick="myFunction()" style="text-decoration:none;color:white;font-size:18px"><b></b></a>
+		<div class="video" style="padding:1px;margin:5px;border:1px solid #121212; background-color:white;" >
+		</div>
+		
+		<span class="intro" style="padding:1px;margin:7px; background-color:#121212;">
+		   <a href="#"> <img src="img/Add.png" alt="add" width="20px" height="20px" style="border-radius:10%;float:right;"></a>
+			<small>INTRODUCTION</small><br>
+			<small>Electric Field Lines</small><br>
+			<b><a href="#">Electric Charge : Crash Course <br>Physics #25</a></b>
+		</span>
+		</div>
+	 <div class="box" style="padding:1px;margin:20px;border:1px solid #121212; background-color:#121212;">
+	  <a href="#" onclick="myFunction()" style="text-decoration:none;color:white;font-size:18px"><b></b></a>
+		<div class="video" style="padding:1px;margin:5px;border:1px solid #121212; background-color:white;" >
+		</div>
+		
+		<span class="intro" style="padding:1px;margin:7px; background-color:#121212;">
+		   <a href="#"> <img src="img/Add.png" alt="add" width="20px" height="20px" style="border-radius:10%;float:right;"></a>
+			<small>INTRODUCTION</small><br>
+			<small>Electric Field Lines</small><br>
+			<b><a href="#">Electric Charge : Crash Course <br>Physics #25</a></b>
+		</span>
+		
+	 </div>
+ </div>
+      
+    </div>
+  </section>  
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('body').scrollspy({
+                target: '#Navbar',
+                offset: 0
+            });
+        });
+
+  var current1 = document.getElementById('default1');
+
+  function highlite1(el)
+  {
+     if (current1 != null)
+     {
+         current1.className = "";
+     }
+     el.className = "highlite1";
+     current1 = el;
+  }
+ var current2 = document.getElementById('default2');
+
+  function highlite2(el)
+  {
+     if (current1 != null)
+     {
+         current2.className = "";
+     }
+     el.className = "highlite2";
+     current2 = el;
+  }
+    </script>
+</body>
+</html>
